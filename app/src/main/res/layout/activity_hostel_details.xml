@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".HostelDetailsActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hostel\n\t\t\t\t Seeker"
+        android:id="@+id/title"
+        android:textColor="#ffffff"
+        android:textSize="47dp"
+        android:textStyle="bold"
+        android:layout_marginTop="56dp"
+        android:layout_marginLeft="25dp"
+        ></TextView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="147dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/hostelname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:hint="Hostel Name"
+                android:inputType="text"
+                android:padding="15dp"></EditText>
+
+            <EditText
+                android:id="@+id/no_of_rooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:hint="Number of Rooms"
+                android:inputType="text"
+                android:padding="15dp"></EditText>
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:hint="Address"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"></EditText>
+
+            <EditText
+                android:id="@+id/landmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:hint="Landmark"
+                android:inputType="textPassword"
+                android:padding="15dp"></EditText>
+
+            <EditText
+                android:id="@+id/area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:hint="Area"
+                android:inputType="textPassword"
+                android:padding="15dp"></EditText>
+
+            <EditText
+                android:id="@+id/pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:hint="Pincode"
+                android:inputType="textPassword"
+                android:padding="15dp"></EditText>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+                <ImageView
+                    android:id="@+id/flag_image"
+                    android:layout_width="140dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/hostel_image" />
+
+
+                <Button
+                    android:id="@+id/pickCountry"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="145dp"
+                    android:background="@drawable/button_rounded"
+                    android:text="Pick Country" />
+
+                <TextView
+                    android:id="@+id/countryNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Country"
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/countryCodeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="182dp"
+                    android:layout_marginTop="130dp"
+                    android:text="Country code"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/countryDialCodeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="182dp"
+                    android:layout_marginTop="150dp"
+                    android:text="Country Dial Code"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/countryCurrencyTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="182dp"
+                    android:layout_marginTop="170dp"
+                    android:text="Corrency"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/pickState"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pick State"
+                    android:layout_marginTop="200dp"
+                    android:background="@drawable/button_rounded"
+                    android:layout_marginStart="20dp"/>
+
+
+                <TextView
+                    android:id="@+id/state_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="210dp"
+                    android:text="State"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_marginStart="180dp"
+                    />
+
+                <Button
+                    android:id="@+id/pick_city"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="260dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/button_rounded"
+                    android:text="Pick City"
+                    />
+
+                <TextView
+                    android:id="@+id/city_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="270dp"
+                    android:layout_marginStart="180dp"
+                    android:text="City"
+                    android:textSize="20dp"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Facilities Available"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"></TextView>
+
+            <CheckBox
+                android:id="@+id/wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="WiFi"
+                android:textSize="20sp"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/nearhospitals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Nearby Hospital"
+                android:textSize="20sp"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/playground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="PlayGround"
+                android:textSize="20sp"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/cafe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="cafe"
+                android:textSize="20sp"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/mess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Mess"
+                android:textSize="20sp"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/acRoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="AC Rooms"
+                android:textSize="20sp"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/nonAc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Non-AC Rooms"
+                android:textSize="20sp"></CheckBox>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:elevation="0dp"
+                    android:src="@drawable/ic_baseline_arrow_forward_24"
+                    app:elevation="0dp"
+                    app:fabCustomSize="80dp"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Next Page"
+                    android:textColor="#191919"
+                    android:textSize="25sp"
+                    android:textStyle="bold"></TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
